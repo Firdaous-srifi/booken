@@ -1,7 +1,5 @@
 'use strict';
 
-
-
 /**
  * add event on elements
  */
@@ -60,23 +58,23 @@ addEventOnElem(window, "scroll", activeElemOnScroll);
  * filter functionality
  */
 
-const filterBtn = document.querySelectorAll("[data-filter-btn]");
-const filterItems = document.querySelectorAll("[data-filter]");
+// const filterBtn = document.querySelectorAll("[data-filter-btn]");
+// const filterItems = document.querySelectorAll("[data-filter]");
 
-let lastClickedBtn = filterBtn[0];
+// let lastClickedBtn = filterBtn[0];
 
-const filter = function () {
-  lastClickedBtn.classList.remove("active");
-  this.classList.add("active");
-  lastClickedBtn = this;
+// const filter = function () {
+//   lastClickedBtn.classList.remove("active");
+//   this.classList.add("active");
+//   lastClickedBtn = this;
 
-  for (let i = 0; i < filterItems.length; i++) {
-    if (filterItems[i].dataset.filter === this.dataset.filterBtn) {
-      filterItems[i].style.display = "block";
-    } else {
-      filterItems[i].style.display = "none";
-    }
-  }
-}
+//   for (let i = 0; i < filterItems.length; i++) {
+//     if (filterItems[i].dataset.filter === this.dataset.filterBtn) {
+//       filterItems[i].style.display = "block";
+//     } else {
+//       filterItems[i].style.display = "none";
+//     }
+//   }
+// }
 
-addEventOnElem(filterBtn, "click", filter);
+// addEventOnElem(filterBtn, "click", filter);
